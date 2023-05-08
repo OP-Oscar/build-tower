@@ -25,14 +25,20 @@
 // CODE STARTS BELOW
 
 function towerBuilder(x){
+    //setting a base
     let base = (2*x)-1
+    //creating variable for space
     let space = " "
+    //tower variable
     let tower = []
+    //using loop depending on x floors
     for(i=0; i<x;i++){
         let level = space.repeat(i)+"*".repeat(base)+space.repeat(i)
         tower.push(level)
+        //after level added, decreasing base by 2
         base -=2
     }
+    //returning tower in reverse since we built it from lower level to high level
     return(tower.reverse())
 }
 
