@@ -45,3 +45,40 @@ function towerBuilder(x){
 
 
 console.log(towerBuilder(6))
+
+
+
+// // alternate solution
+
+// function createTower(floorNum) {
+//     let row = floorNum
+//     let tower = []
+    
+//     for(let i=1; i<=floorNum; i++){
+//         let spaceCount = 0;
+//         let line = '';
+//         let starCount = (2*i)-1;
+
+//         while ((row-1)> spaceCount){
+//             line += ' ';
+//             spaceCount++;
+//         }
+
+//         for(let s=1; s<=starCount; s++){ 
+//             line += '*';
+//         }
+
+//         spaceCount = 0; //=>resetting space count 
+//         while ((row-1)> spaceCount){
+//             line += ' ';
+//             spaceCount++;
+//         }
+
+//         row--
+//         tower.push(line);
+//     }
+//     return tower
+
+// }
+
+// console.log(createTower(10))
